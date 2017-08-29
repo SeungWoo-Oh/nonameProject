@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import noname.common.common.CommandMap;
 import noname.sample.service.SampleService;
 
 @Controller
@@ -20,10 +21,11 @@ public class SampleController {
 	private SampleService sampleService;
 	
 	@RequestMapping(value="/sample/openSampleList.do")
-	public ModelAndView openSampleList(Map<String,Object> commandMap) throws Exception{
+	public ModelAndView openSampleList(CommandMap commandMap) throws Exception{
 		ModelAndView mv = new ModelAndView("/sample/sample");
 		
-		List<Map<String, Object>> list = sampleService.selectUserList(commandMap);
+		System.out.println(commandMap.getMap());
+		List<Map<String, Object>> list = sampleService.selectUserList(commandMap.getMap());
 		mv.addObject("list", list);
 		
 		return mv;
