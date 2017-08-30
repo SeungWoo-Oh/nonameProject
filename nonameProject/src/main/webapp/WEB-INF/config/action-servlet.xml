@@ -3,9 +3,12 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:beans="http://www.springframework.org/schema/beans"
 	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
@@ -14,7 +17,10 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="noname" />
+	<!-- annotation Controller set -->
+	<context:component-scan base-package="noname" use-default-filters="false">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>
 	
 	<!-- Interceptor -->
 	<interceptors>
@@ -24,14 +30,17 @@
 		</interceptor>
 	</interceptors>
 	
-	<!-- customMapArgumentResolver -->
+	<!-- CustomMapArgumentResolver -->
 	 <annotation-driven>
         <argument-resolvers>
            <beans:bean class="noname.common.resolver.CustomMapArgumentResolver"></beans:bean>       
         </argument-resolvers>
     </annotation-driven>
-
-
+    
+    <!-- LoggerAspectJ -->
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+    <beans:bean id="loggerAspect" class="noname.common.logger.LoggerAspect"></beans:bean>
 
 	
+
 </beans:beans>

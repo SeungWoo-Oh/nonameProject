@@ -39,6 +39,20 @@
 			<artifactId>aspectjrt</artifactId>
 			<version>${org.aspectj-version}</version>
 		</dependency>
+		
+		<!--  AspectJ add dependency -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>${org.aspectj-version}</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjtools</artifactId>
+			<version>${org.aspectj-version}</version>
+		</dependency>
+
 
 		<!-- Logging -->
 		<dependency>
@@ -148,11 +162,19 @@
 			<version>1.4</version>
 		</dependency>
 
+		<!-- MySQL dependency -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.0.8</version>
 		</dependency>
+		
+		<!-- cglib -->
+		<dependency>
+			<groupId>cglib</groupId>
+ 			<artifactId>cglib</artifactId>
+ 			<version>2.2</version>
+ 		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
