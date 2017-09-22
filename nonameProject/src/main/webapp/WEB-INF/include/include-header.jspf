@@ -11,3 +11,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="<c:url value='/js/common.js'/>" charset="utf-8"></script>
 
+<!-- css reset -->
+<link rel ="stylesheet" type="text/css" href="<c:url value='/css/styleSheet.css'/>" />
