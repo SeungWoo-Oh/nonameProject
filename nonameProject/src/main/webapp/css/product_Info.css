@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+/*상품 기본 정보(상단)*/
+.wrap {
+	position:relative;
+	width:1200px;
+	margin: 0 auto;
+}
+
+.product_container{
+	padding: 0 0 0  635px;
+}
+
+.imgArea {
+	float:left;
+	width: 600px;
+	margin: 0 0 0 -600px;
+}
+
+
+.infoArea h3 {
+	width:455px;
+	padding: 22px 5px 20px 9px;
+	border-bottom: 1px solid #a3a3a3;
+	font-size:16px;
+	color: #777777;
+}
+
+.infoArea table {
+	width:470px;
+	border:0;
+	font-size: 12px;
+	margin: 10px 0 0;
+}
+
+.infoArea th {
+	font-weight:normal;
+	color:#353535;
+	width: 115px;
+	padding: 7px 0 8px 9px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.infoArea td {
+	padding: 7px 10px 8px 0;
+	vertical-align: top;
+}
+
+.totalInfoArea {
+	margin: 21px 0 0;
+}
+
+.totalInfoArea tbody td{
+	padding: 9px 0;
+	border-top: 1px solid #ebcbcb;
+	color: #353535;
+	line-height: 18px;
+	vertical-align: middle;
+	word-wrap:break-word;
+	word-break: break-all;
+}
+
+.totalInfoArea tfoot td{
+	padding: 20px 9px 19px;
+	border-top: 1px solid #f0f0f0;
+	color: #353535;
+	line-height: 18px;
+	vertical-align: middle;
+	background:white;
+}
+
+.btnArea {
+	width:470px;
+	padding: 30px 0 10px;
+	border-top:0px solid #000;
+}
+
+.buttonDiv{
+	overflow: hidden;
+	margin: 0 0 15px 5px;
+	text-align: center;
+	font-size: 180x;
+	line-height: 55px;
+	font-family: "맑은고딕","Malgun Gothic","돋움";
+}
+
+.buttonDiv span{
+	text-align: center;
+	margin:0px 0px 7px;
+	display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0px);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 1px;
+    backface-visibility: hidden;
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.3s;
+    background: rgb(0, 0, 0);	
+}
+
+a {
+	text-decoration: none;
+}
+
+.buttonDiv a {
+	display: inline-block;
+	vertical-align: top;
+	color: rgb(255, 255, 255);	
+}
+
+/*상품 상제 정보(중단)*/
+
+.detailArea{
+	width: 1200px;
+    color: rgb(53, 53, 53);
+    line-height: 18px;
+    margin: 0px auto;
+    padding: 27px 0px 20px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: rgb(215, 213, 213);
+    border-image: initial;
+    text-align: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+/*이용후기*/
+.customerArea{
+	width:1000px;
+	margin: 30px auto;
+
+}
+
+.customerArea table{
+	width: 100%;
+	margin: 15px 0 0;
+	border-top: 2px solid #d7d5d5;
+	color: #353535;
+	font-size:  11px;
+	line-height: 140%;
+}
+
+
+.customerArea tbody td{
+	padding: 14px 3px 13px;
+    border-top: 1px solid #e3e3e3;
+    border-right: 0px solid #e3e3e3;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.reviewBtnArea{
+	text-align: right;
+	padding: 8px 19px 12px 0;
+    border: 0px solid #d7d5d5;
+    border-top: 1px solid #d7d5d5;
+}
+
+.reviewPaging{
+	 margin: -1px 0 0;
+    padding: 12px 0;
+    border: 0px solid #d7d5d5;
+    border-top: 0px solid #e9e9e9;
+    text-align: center;
+    background: #fff;
+}
+
+.reviewPaging p{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.reviewPaging p.first{
+    margin: 0 -4px 0 0;
+}
+
+.reviewPaging p.last{
+    margin: 0 0 0 -4px;
+}
+
+
+.reviewPaging ol{
+   display: inline-block;
+    margin: 0 -4px;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: top;
+}
+
+
+.reviewPaging li{
+    display: inline-block;
+    margin: 0 0 0 -1px;
+    border: 0px solid #d7d5d5;
+    font-size: 11px;
+    color: #757575;
+    vertical-align: top;
+}
+
+.reviewPaging li::first-child{
+	margin-left: 0;
+}
+
+.currentBtn{
+	display: block;
+    width: 33px;
+    padding: 3px 0;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 14px;
+    background: #fff;
+    font-size: 25px;
+}
+
+
+.reviewPaging li a{
+	display: block;
+    width: 33px;
+    padding: 3px 0;
+    font-weight: bold;
+    color: #cacaca;
+    line-height: 14px;
+    background: #fff;
+}
+
+
+/* 맨 하당 환불, 배송 정보 */
+ .noteArea{
+ 	border-top: 1px solid #000;
+ }
+ 
+ .bigNoteArea{
+	margin: -150px auto 0;
+	min-height: 30px;
+	margin: 10px 0;
+}
+
+.bigNoteArea h2{
+    width: 600px;
+    font-size: 16px;
+    font-family: 맑은고딕, "Malgun Gothic", Arial, 돋움, Dotum, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0px auto;
+    padding: 15px 0px 0px;
+}
+
+
+.smallNoteArea{
+	width: 1000px;
+    font-size: 11px;
+    text-align: center;
+    font-family: 돋움, Dotum, 맑은고딕, "Malgun Gothic", Arial, sans-serif;
+    margin: 0px auto 10px;
+}
+
+.smallNoteArea ul li{
+	list-style: none;
+} 
