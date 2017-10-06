@@ -9,7 +9,7 @@
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
 		<java-version>1.6</java-version>
-		<org.springframework-version>3.1.1.RELEASE</org.springframework-version>
+		<org.springframework-version>4.3.8.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 	</properties>
@@ -133,7 +133,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.7</version>
+			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -141,13 +141,13 @@
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
-			<version>3.2.2</version>
+			<version>3.4.1</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
-			<version>1.2.0</version>
+			<version>1.3.0</version>
 		</dependency>
 
 		<dependency>
@@ -166,7 +166,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.0.8</version>
+			<version>5.1.38</version>
 		</dependency>
 		
 		<!-- cglib -->
@@ -177,18 +177,11 @@
  		</dependency>
  		
  		<!-- ajax jackson - json -->
- 		<dependency>
- 			<groupId>net.sf.json-lib</groupId>
- 			<artifactId>json-lib</artifactId>
- 			<version>2.4</version>
- 			<classifier>jdk15</classifier>
- 		</dependency>
- 		
- 		<dependency>
- 			<groupId>org.codehaus.jackson</groupId>
- 			<artifactId>jackson-mapper-asl</artifactId>
- 			<version>1.6.4</version>
- 		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.8.7</version>
+		</dependency>
 		
 	</dependencies>
 	<build>

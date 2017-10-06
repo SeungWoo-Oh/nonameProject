@@ -33,7 +33,7 @@
 	function showProductInfo(data){
 		$("#product_name").html(data.productInfo.product_name);
 		$("#product_price").html(data.productInfo.product_price);
-		$("#product_detail").html(data.productInfo.product_deetail);
+		$("#product_detail").html(data.productInfo.product_detail);
 	}
 	
 	
@@ -54,7 +54,7 @@
 					html += "<tr>";
 					html += "<td>" + item.product_id +"</td>";
 					html += "<td>" + item.product_name +"</td>";
-					html += "<td>" + item.product_deetail +"</td>";
+					html += "<td>" + item.product_detail +"</td>";
 					html += "</tr>";
 				})
 				

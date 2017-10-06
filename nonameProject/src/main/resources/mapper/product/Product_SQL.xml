@@ -4,7 +4,7 @@
 	<select id="selectProductInfo" parameterType="hashmap" resultType="hashmap">
 		SELECT 
 				product_name,
-				product_deetail,
+				product_detail,
 				product_price,
 				product_option1,
 				product_option2,
@@ -27,7 +27,7 @@
 		SELECT
 		 		product_id,
 		 		product_name,
-		 		product_deetail
+		 		product_detail
 		FROM
 				noname_product
 		ORDER BY 
