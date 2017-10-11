@@ -12,10 +12,23 @@
 
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
-	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<!-- 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/jsp/" />
 		<beans:property name="suffix" value=".jsp" />
+	</beans:bean> -->
+	
+	<!-- Apache tiles -->
+	<beans:bean id="tilesViewResolver" class="org.springframework.web.servlet.view.tiles3.TilesViewResolver">
+		<beans:property name="order" value="1"></beans:property>
 	</beans:bean>
+	<beans:bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		<beans:property name="definitions">
+			<beans:list>
+				<beans:value>/WEB-INF/jsp/**/tiles.xml</beans:value>
+			</beans:list>
+		</beans:property>
+	</beans:bean>
+	
 	
 	<!-- annotation Controller set -->
 	<context:component-scan base-package="noname" use-default-filters="false">

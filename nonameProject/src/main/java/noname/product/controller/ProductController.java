@@ -23,7 +23,7 @@ public class ProductController {
 	/*상품 상세정보 JSP 호출함수*/
 	@RequestMapping(value="/openProductInfo.do")
 	public ModelAndView openProductPage(CommandMap commandMap) throws Exception{
-		ModelAndView mv = new ModelAndView("/product/product_Info");
+		ModelAndView mv = new ModelAndView("product/product_Info");
 		return mv;
 	}
 	

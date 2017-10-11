@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	 <!-- base-definition -->
+	<definition name="base-definition" template="/WEB-INF/jsp/tiles/layouts/defaultLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/tiles/layouts/defaultHeader.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/tiles/layouts/defaultFooter.jsp" />
+	</definition> 
+	
+	
+	<!--body -->
+	<definition name="*" extends="base-definition">
+		<put-attribute name="title" value="Noname" />
+		<put-attribute name="body" value="/WEB-INF/jsp/{1}.jsp" />
+	</definition> 
+	
+	<!-- 폴더확장: *순서에 따라 {1},{2} 에 Mapping -->
+	<definition name="*/*" extends="base-definition">
+		<put-attribute name="title" value="Noname" />
+		<put-attribute name="body" value="/WEB-INF/jsp/{1}/{2}.jsp" />
+	</definition> 
+	
+</tiles-definitions>
+
