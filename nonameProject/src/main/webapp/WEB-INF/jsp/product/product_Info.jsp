@@ -13,7 +13,7 @@
 			type : "POST",
 			url : "${pageContext.request.contextPath}/showProductInfo.do",
 			data : {
-				"product_id" : 1
+				"product_id" : 7
 			},
 			success : function(data) {
 				showProductInfo(data);
