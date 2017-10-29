@@ -20,8 +20,6 @@
 					<span class="product_name">PRODUC_NAME_FROM_DB </span> <br /> <span class="product_price">PRODUC_PRICE_FROM_DB </span>
 				</div>
 			</div>
-			
-			
 			<div class="product_area">
 				<div class="product_img_area">
 					<img src="//uzumarket.co.kr/web/product/medium/201705/3084_shop1_209224.png" class="product_img" /> <br />
@@ -30,8 +28,6 @@
 					<span class="product_name">PRODUC_NAME_FROM_DB </span> <br /> <span class="product_price">PRODUC_PRICE_FROM_DB </span>
 				</div>
 			</div>
-			
-			
 			<div class="product_area">
 				<div class="product_img_area">
 					<img src="//uzumarket.co.kr/web/product/medium/201705/3084_shop1_209224.png" class="product_img" /> <br />
@@ -40,8 +36,6 @@
 					<span class="product_name">PRODUC_NAME_FROM_DB </span> <br /> <span class="product_price">PRODUC_PRICE_FROM_DB </span>
 				</div>
 			</div>
-			
-			
 		</div>
 	</form>
 </body>

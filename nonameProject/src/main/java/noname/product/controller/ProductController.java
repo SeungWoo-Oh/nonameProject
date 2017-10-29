@@ -56,8 +56,13 @@ public class ProductController {
 		ModelAndView mv = new ModelAndView("product/product_list");
 		
 		List<Map<String, Object>> productListMap = productService.showProductList(commandMap.getMap());
-		
 		mv.addObject("productListMap", productListMap);
+		
+		System.out.println("ByoungsooLog");
+		System.out.println(productListMap.get(0).get("product_id"));
+		System.out.println(productListMap.get(0).get("product_name"));
+		System.out.println(productListMap.get(0).get("product_price"));
+		System.out.println(productListMap.get(0).get("product_mainImg"));
 		
 		return mv;
 	}
