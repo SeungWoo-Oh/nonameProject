@@ -48,4 +48,14 @@ public class ProductController {
 		return mv;
 	}
 	
+	
+	/*============= BYOUNGSOO =============*/
+	/*Product List*/
+	@RequestMapping(value="/openProductList.do")
+	public ModelAndView openProductList(CommandMap commandMap) throws Exception{
+		ModelAndView mv = new ModelAndView("product/product_list");
+		return mv;
+	}
+	
+	
 }
