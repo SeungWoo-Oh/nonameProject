@@ -11,42 +11,44 @@
 <body>
 	<form>
 		<div class="wrap">
-
-
-
-
-			<div class="product_box">
-
-				<img src="//uzumarket.co.kr/web/product/medium/201705/3084_shop1_209224.png" class="product_img" />
-				<br/>
-				<span class="span1">상품명: </span> <span class="span1">PRODUC_NAME_FROM_DB </span> 
-				
-				
+			<div class="product_area">
+				<div class="product_img_area">
+					<img src="//uzumarket.co.kr/web/product/medium/201705/3084_shop1_209224.png" class="product_img" /> <br />
+					
+					
+				</div>
+				<div class="product_info_area">
+					<span class="product_name">PRODUC_NAME_FROM_DB </span> <br /> 
+					<span class="product_price">PRODUC_PRICE_FROM_DB </span>
+				</div>
 			</div>
 			
-			<div class="product_box">
-
-				<img src="//uzumarket.co.kr/web/product/medium/201705/3084_shop1_209224.png" class="product_img" />
-				<br/>
-				<span class="span1">상품명: </span> <span class="span1">PRODUC_NAME_FROM_DB </span> 
-				
+			<div class="product_area">
+				<div class="product_img_area">
+					<img src="//uzumarket.co.kr/web/product/medium/201705/3084_shop1_209224.png" class="product_img" /> <br />
+					
+					
+				</div>
+				<div class="product_info_area">
+					<span class="product_name">PRODUC_NAME_FROM_DB </span> <br /> 
+					<span class="product_price">PRODUC_PRICE_FROM_DB </span>
+				</div>
 			</div>
 			
-			<div class="product_box">
-
-				<img src="//uzumarket.co.kr/web/product/medium/201705/3084_shop1_209224.png" class="product_img" />
-				<br/>
-				<span class="span1">상품명: </span> <span class="span1">PRODUC_NAME_FROM_DB </span> 
-				
+			
+			<div class="product_area">
+				<div class="product_img_area">
+					<img src="//uzumarket.co.kr/web/product/medium/201705/3084_shop1_209224.png" class="product_img" /> <br />
+					
+					
+				</div>
+				<div class="product_info_area">
+					<span class="product_name">PRODUC_NAME_FROM_DB </span> <br /> 
+					<span class="product_price">PRODUC_PRICE_FROM_DB </span>
+				</div>
 			</div>
 			
-			<div class="product_box">
-
-				<img src="//uzumarket.co.kr/web/product/medium/201705/3084_shop1_209224.png" class="product_img" />
-				<br/>
-				<span class="span1">상품명: </span> <span class="span1">PRODUC_NAME_FROM_DB </span> 
-				
-			</div>
+			
 			
 		</div>
 	</form>
