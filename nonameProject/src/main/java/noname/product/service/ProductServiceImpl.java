@@ -34,6 +34,17 @@ public class ProductServiceImpl implements ProductService {
 		
 		return map;
 	}
+	
+	
+	/*============= BYOUNGSOO =============*/
+	/*Product List*/
+	@Override
+	public List<Map<String, Object>> showProductList(Map<String, Object> map) throws Exception {
+		// TODO Auto-generated method stub
+		
+		return productDAO.showProductList(map);
+	}
+	
 
 
 

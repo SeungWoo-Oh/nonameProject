@@ -6,4 +6,9 @@ import java.util.Map;
 public interface ProductService {
 	Map<String, Object> selectProductInfo(Map<String, Object> map) throws Exception;
 	Map<String, Object> showReviewBoard(Map<String, Object> map) throws Exception;
+	
+	/*============= BYOUNGSOO =============*/
+	/*Product List*/
+	List<Map<String, Object>> showProductList(Map<String, Object> map) throws Exception;
+	
 }

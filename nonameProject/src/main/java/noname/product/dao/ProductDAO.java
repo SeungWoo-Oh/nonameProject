@@ -23,4 +23,11 @@ public class ProductDAO extends AbstractDAO{
 	public List<Map<String, Object>> showReviewBoard(Map<String, Object> map) {
 		return (List<Map<String, Object>>)selectList("product.reviewList", map);
 	}
+	
+	
+	@SuppressWarnings("unchecked")
+	public List<Map<String, Object>> showProductList(Map<String, Object> map) {
+		
+		return (List<Map<String, Object>>)selectList("product.productList", map);
+	}
 }

@@ -36,5 +36,21 @@
 				#{beginRow}, #{rowCount}
 	</select>
 	
+	
+	<select id="productList" parameterType="hashmap" resultType="hashmap">
+		SELECT
+		 		product_id,
+		 		product_name,
+		 		product_mainImg,
+		 		product_price
+		FROM
+				noname_product
+	    WHERE
+	            product_category_id = 2
+		ORDER BY 
+				product_id DESC
+	</select>
+	
+	
 
 </mapper>

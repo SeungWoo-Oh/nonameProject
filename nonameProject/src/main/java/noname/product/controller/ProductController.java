@@ -51,9 +51,14 @@ public class ProductController {
 	
 	/*============= BYOUNGSOO =============*/
 	/*Product List*/
-	@RequestMapping(value="/openProductList.do")
-	public ModelAndView openProductList(CommandMap commandMap) throws Exception{
+	@RequestMapping(value="/showProductList.do")
+	public ModelAndView showProductList(CommandMap commandMap) throws Exception{
 		ModelAndView mv = new ModelAndView("product/product_list");
+		
+		List<Map<String, Object>> productListMap = productService.showProductList(commandMap.getMap());
+		
+		mv.addObject("productListMap", productListMap);
+		
 		return mv;
 	}
 	
